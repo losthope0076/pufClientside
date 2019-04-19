@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4d4bc9cc-a394-40d3-b7d5-e9e0c69d375e" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/layout.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="545">
+              <caret line="52" column="44" selection-start-line="52" selection-start-column="44" selection-end-line="52" selection-end-column="44" />
+              <folding>
+                <element signature="n#section#6;n#section#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#section#7;n#section#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#section#8;n#section#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#section#11;n#section#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#section#12;n#section#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lost.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="301" column="3" selection-start-line="301" selection-start-column="3" selection-end-line="301" selection-end-column="3" />
+              <folding>
+                <element signature="n#!!block;n#cerr#0" />
+                <element signature="n#!!block;n#cbug#0" />
+                <element signature="n#!!block;n#clog#0" />
+                <element signature="e#319#738#0" />
+                <element signature="e#765#1351#0" />
+                <element signature="e#1390#2388#0" />
+                <element signature="e#2424#3988#0" />
+                <element signature="e#4027#9369#0" />
+                <element signature="e#9400#11146#0" />
+                <element signature="e#11175#12880#0" />
+                <element signature="e#12913#14878#0" />
+                <element signature="e#14916#17371#0" />
+                <element signature="e#17407#21897#0" />
+                <element signature="e#21934#24004#0" />
+                <element signature="e#24047#34555#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>getIdFromEntry</find>
+      <find>showtyp</find>
+      <find>inputstream</find>
+      <find>savevalue</find>
+      <find>jwt</find>
+      <find>responsejson</find>
+      <find>showroom</find>
+      <find>erstellen</find>
+      <find>'</find>
+      <find>veranstalltungsDaten</find>
+      <find>raumEntries</find>
+      <find>GetMyData</find>
+      <find>getveranstalltung</find>
+      <find>entry</find>
+      <find>isAdminSite</find>
+      <find>is-admin-site</find>
+      <find>changememberrole</find>
+      <find>console.</find>
+      <find>Home</find>
+      <find>rementry</find>
+      <find>news</find>
+      <find>width</find>
+      <find>right</find>
+      <find>editentry</find>
+      <find>logout</find>
+      <find>adminmitglied</find>
+      <find>reloadowndata</find>
+      <find>window</find>
+      <find>axio</find>
+      <find>login</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>'</replace>
+      <replace>isadminsite</replace>
+      <replace>cerr</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/test1.html" />
+        <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/layout.html" />
+        <option value="$PROJECT_DIR$/lost.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1931" />
+    <option name="width" value="1737" />
+    <option name="height" value="1120" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="clientside" type="b2602c69:ProjectViewProjectNode" />
+              <item name="clientside" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="clientside" type="b2602c69:ProjectViewProjectNode" />
+              <item name="clientside" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4d4bc9cc-a394-40d3-b7d5-e9e0c69d375e" name="Default Changelist" comment="" />
+      <created>1551121702242</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1551121702242</updated>
+      <workItem from="1551121705643" duration="1747000" />
+      <workItem from="1551190393256" duration="3577000" />
+      <workItem from="1551206633330" duration="6156000" />
+      <workItem from="1551466172324" duration="7971000" />
+      <workItem from="1551608346480" duration="2645000" />
+      <workItem from="1551699814156" duration="12096000" />
+      <workItem from="1553692083904" duration="10787000" />
+      <workItem from="1554117824383" duration="3769000" />
+      <workItem from="1554125630283" duration="1286000" />
+      <workItem from="1554223268247" duration="12809000" />
+      <workItem from="1554284287563" duration="4739000" />
+      <workItem from="1554325067724" duration="4041000" />
+      <workItem from="1554367314778" duration="9499000" />
+      <workItem from="1554492135753" duration="3637000" />
+      <workItem from="1554551196065" duration="16492000" />
+      <workItem from="1554629744962" duration="8545000" />
+      <workItem from="1554653557496" duration="14443000" />
+      <workItem from="1554714162175" duration="25778000" />
+      <workItem from="1554810275929" duration="23597000" />
+      <workItem from="1554899959594" duration="8522000" />
+      <workItem from="1555067198767" duration="4374000" />
+      <workItem from="1555249202030" duration="1360000" />
+      <workItem from="1555325995238" duration="3116000" />
+      <workItem from="1555344215899" duration="4592000" />
+      <workItem from="1555405575343" duration="1303000" />
+      <workItem from="1555681369195" duration="348000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="197229000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1931" y="0" width="1737" height="1120" extended-state="0" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2631891" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32990506" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32931727" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.3294423" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/lost.js</url>
+          <line>341</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../IAMG/app.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="35" column="43" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../IAMG/www/js/controller/EditViewController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="167" column="27" selection-start-line="167" selection-start-column="24" selection-end-line="167" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html" />
+    <entry file="file://$PROJECT_DIR$/lost_old.js" />
+    <entry file="file://$PROJECT_DIR$/test.js" />
+    <entry file="file://$PROJECT_DIR$/test1.html" />
+    <entry file="file://$PROJECT_DIR$/test.html" />
+    <entry file="file://$PROJECT_DIR$/components/veranstalltung.vue" />
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="46" column="22" lean-forward="true" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_unpkg.com_axios_dist_axios.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/axios/dist/axios.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lost.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="301" column="3" selection-start-line="301" selection-start-column="3" selection-end-line="301" selection-end-column="3" />
+          <folding>
+            <element signature="n#!!block;n#cerr#0" />
+            <element signature="n#!!block;n#cbug#0" />
+            <element signature="n#!!block;n#clog#0" />
+            <element signature="e#319#738#0" />
+            <element signature="e#765#1351#0" />
+            <element signature="e#1390#2388#0" />
+            <element signature="e#2424#3988#0" />
+            <element signature="e#4027#9369#0" />
+            <element signature="e#9400#11146#0" />
+            <element signature="e#11175#12880#0" />
+            <element signature="e#12913#14878#0" />
+            <element signature="e#14916#17371#0" />
+            <element signature="e#17407#21897#0" />
+            <element signature="e#21934#24004#0" />
+            <element signature="e#24047#34555#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="52" column="44" selection-start-line="52" selection-start-column="44" selection-end-line="52" selection-end-column="44" />
+          <folding>
+            <element signature="n#section#6;n#section#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#7;n#section#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#8;n#section#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#11;n#section#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#12;n#section#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

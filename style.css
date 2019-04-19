@@ -1,0 +1,176 @@
+#navi ul{
+    margin-right: auto;
+    margin-left: auto;
+    max-width: max-content;
+}
+
+#navi ul li{
+    margin: 0;
+    padding-top: 5px;
+    margin-bottom: 5px;
+    height: 25px;
+    width: 200px;
+    border: 1px solid;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6{
+    text-align: center;
+    color: #FF0000;
+}
+
+table{
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tr:nth-child(2n){
+    background: #eee;
+}
+th{
+    text-align: center;
+    padding: 5px 10px;
+}
+td{
+    text-align: center;
+    padding: 5px 10px;
+    border: 1px solid;
+}
+
+a{
+    color: blue;
+}
+
+section{
+    min-height: 400px;
+
+}
+section:last-child{
+    min-height: 0;
+    margin-right: 0;
+}
+section.inhalt{
+    margin-left: 10px;
+    margin-right: 50px;
+    /*min-width: 200px;*/
+
+}
+main section section section{
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #eeeeee;
+    margin-bottom: 30px;
+}
+
+
+
+main section section section{
+    display: flow;
+    margin-left: 50px;
+    float: left;
+    /*width: max-content;*/
+    /*border: aqua 1px solid;*/
+}
+main section.center{
+    width: max-content;
+    border: 1px solid #000;
+    color: green;
+}
+
+
+
+main section section section div:last-child{
+    margin: auto;
+    width: max-content;
+}
+label{
+    display: inline-block;
+    width:160px;
+    text-align: right;
+}
+
+.PersoneneEingabe div:last-child{
+    text-align: center;
+    color: #FF0000;
+    margin-top: 10px;
+}
+.PersoneneEingabe{
+    height: 300px;
+    width: 460px;
+    float: left;
+}
+.ProfilBild{
+    margin-left: 20px;
+    width: 200px;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+
+.eingetragen{
+    color: green;
+}
+ul, li{
+    margin-right: 10px;
+    margin-left: 10px;
+    list-style-type: none;
+    padding: 0;
+}
+
+section.anmelden{
+    background: none;
+    min-width: 90%;
+    text-align: center;
+
+
+}
+.anmelden{
+    min-height: 50px;
+    min-width: 300px;
+}
+
+
+.default{
+    float: none;
+    display: initial;
+
+}
+
+.news{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    width: 50%;
+    max-width: 1000px;
+    min-width: 300px;
+    text-align: center;
+    background: #ccc;
+    border: 1px solid;
+}
+
+.news .top{
+    background: #ddd;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    /*background: green;*/
+}
+.news .mid{
+    font-size: 20px;
+    padding: 20px;
+    /*background: aqua;*/
+}
+.news .bot{
+    background: #ddd;
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    /*background: aquamarine;*/
+}
+.newsInhalt{
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: inherit;
+}

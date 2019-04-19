@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>layout</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body class="center">
+<div id="app">
+    <header id="navi" v-if="serverConfig.headers.authorization != null">
+        <ul>
+            <li v-for="link in linklist.slice(0,6)">
+                <a href="#" @click="setRoute(link.src, link.href)">{{ link.text }}</a>
+            </li>
+        </ul>
+        <ul v-if="user.role === 'ADMIN'" >
+            <li v-for="link in linklist.slice(6,)">
+                <a href="#"  @click="setRoute(link.src, link.href)">{{ link.text }}</a>
+            </li>
+        </ul>
+
+    </header>
+
+    <main>
+
+        <section id="error" v-if="error">
+            error: {{ JSON.stringify(error) }}
+        </section>
+        <br>
+
+        <!-- Layout routen,  was geladen werden soll-->
+        <section v-if="serverConfig.headers.authorization != null">
+            <section class="route" v-if="route ===  '#Mitgliederuebersicht'">
+                <h2>Mitgliederuebersicht</h2>
+                <mitglieder
+                    v-bind:mitglieder="mitglieder"
+                    v-on:getmitglied="getmitglied"
+                ></mitglieder>
+            </section>
+            <section class="route" v-else-if="route ===  '#Mitglied'">
+                <h2>Mitglieduebersicht</h2>
+                <mitglied
+                    v-bind:mitglied="mitglied"
+                    v-on:getveranstalltung="getVeranstalltung"
+                ></mitglied>
+            </section>
+            <section class="route" v-else-if="route ===  '#Veranstalltungen'">
+                <h2>Veranstalltungen</h2>
+                <veranstalltungen v-if="veranstalltungen != null"
+                    v-bind:veranstalltungen="veranstalltungen"
+                    v-bind:user="user"
+                    v-on:getveranstalltung="getVeranstalltung"
+                    v-on:addentry="addEntry"
+                    v-on:rementry="remEntry"
+                >
+                </veranstalltungen>
+            </section>
+            <section class="route" v-else-if="route ===  '#Veranstalltung'">
+                <h2>Veranstalltung</h2>
+                <veranstalltung
+                        v-bind:veranstalltung="veranstalltung"
+                        :user="user"
+                        v-on:getveranstalltung="getVeranstalltung"
+                        v-on:getmitglied="getmitglied"
+                        v-on:addentry="addEntry"
+                        v-on:rementry="remEntry"
+                >
+                </veranstalltung>
+            </section>
+            <section class="route" v-else-if="route ===  '#My'">
+                <h2>Meine Daten</h2>
+                <mitglied
+                        v-bind:mitglied="user"
+                ></mitglied>
+                <veranstalltungen
+                        v-bind:veranstalltungen="user.veranstalltung"
+                        v-on:getveranstalltung="getVeranstalltung"
+
+                ></veranstalltungen>
+
+
+            </section>
+            <section class="route" v-else-if="route ===  '#Beitraege'">
+                <h2>Meine Beitraege</h2>
+
+                <beitragsuebersicht
+                        v-bind:beitragsuebersicht="meinebeitraege"
+                        v-on:editentry="editEntry"
+                        v-on:delentry="delEntry"
+                ></beitragsuebersicht>
+            </section>
+            <!-- Adminbereich-->
+            <section class="route" v-else-if="route ===  '#admin'">
+                <h2>Admininterface</h2>
+            </section>
+            <section class="route" v-else-if="route ===  '#admin/nachrichten'">
+                <h2>Admininterface - Nachrichten</h2>
+                <nachrichten
+                        v-if="nachrichten !== null"
+                        v-bind:nachrichten="nachrichten"
+                        v-bind:user="user"
+                        v-bind:mitglieder="mitglieder"
+                        v-bind:isadminsite="true"
+                        v-on:delentry="delEntry"
+                        v-on:loadeditentry="loadEditEntry"
+                ></nachrichten>
+                <nachricht-erstellen
+                    v-bind:nachricht="nachricht"
+                    v-bind:user="user"
+                    v-bind:mitglieder="mitglieder"
+                    v-on:loadeditentry="loadEditEntry"
+                    v-on:insertentry="insertEntry"
+                    v-on:editentry="editEntry"
+                ></nachricht-erstellen>
+            </section>
+            <section class="route" v-else-if="route ===  '#admin/mitglieder'">
+                <h2>{{ route }}</h2>
+
+                <mitglieder
+                        v-bind:mitglieder="mitglieder"
+                        v-on:getmitglied="getmitglied"
+                        v-bind:isadminsite="true"
+                        v-on:loadeditentry="loadEditEntry"
+                        v-on:delentry="delEntry"
+                ></mitglieder>
+
+
+                <mitglied-erstellen
+                    v-bind:mitglied="mitglied"
+                    v-on:insertentry="insertEntry"
+                    v-on:editentry="editEntry"
+                    v-on:deleteimage="deleteimage"
+                    v-bind:isadminsite="true"
+                    v-on:changememberrole="changeMemberRole"
+                >
+                </mitglied-erstellen>
+
+
+            </section>
+            <section class="route" v-else-if="route ===  '#admin/mitglied'">
+                <h2>{{ route }}</h2>
+                <mitglied
+                        v-bind:mitglied="mitglied"
+                        v-on:getveranstalltung="getVeranstalltung"
+                ></mitglied>
+
+            </section>
+            <section class="route" v-else-if="route ===  '#admin/beitraege'">
+                <h2>{{ route }}</h2>
+                <beitragsuebersicht
+                    v-bind:beitragsuebersicht="beitraege"
+                    v-bind:isadminsite="true"
+                    v-on:editentry="editEntry"
+                    v-on:delentry="delEntry"
+                ></beitragsuebersicht>
+
+
+                <beitragerstellen
+                    v-bind:beitrag="beitrag"
+                    v-bind:mitglieder="mitglieder"
+                    v-on:insertentry="insertEntry"
+                ></beitragerstellen>
+
+
+
+            </section>
+            <section class="route" v-else-if="route ===  '#admin/raeume'">
+                <raeume :raeume="raeume"></raeume>
+            </section>
+            <section class="route" v-else-if="route ===  '#admin/veranstalltungen'">
+
+                <section v-if="veranstalltungen != null">
+                    <h2>Veranstalltungen</h2>
+                    <veranstalltungen
+                            v-bind:veranstalltungen="veranstalltungen"
+                            v-bind:user="user"
+                            v-bind:isadminsite="true"
+                            v-on:getveranstalltung="getVeranstalltung"
+                            v-on:addentry="addEntry"
+                            v-on:rementry="remEntry"
+                            v-on:delentry="delEntry"
+                    >
+                    </veranstalltungen>
+                </section>
+
+                <section>
+                    <h2>Veranstalltung erstellen</h2>
+                    <veranstalltungerstellen
+                        v-bind:veranstalltung="veranstalltung"
+                        v-bind:raeume="raeume"
+                        v-bind:veranstalltungstypen="veranstalltungstypen"
+                        v-bind:leitungen="leitungen"
+                        v-bind:dateformat="dateformat"
+                        v-bind:raum="raum"
+                        v-bind:veranstalltungstyp="veranstalltungstyp"
+                        v-bind:leitung="leitung"
+                        v-on:insertentry="insertEntry"
+                    ></veranstalltungerstellen>
+                </section>
+            </section>
+
+            <section class="route" v-else-if="route ===  '#admin/veranstalltung'">
+                <h2>Admin - Veranstalltung</h2>
+                <veranstalltung
+                        v-bind:veranstalltung="veranstalltung"
+                        v-bind:isadminsite="true"
+                        :user="user"
+                        v-on:getveranstalltung="getVeranstalltung"
+                        v-on:getmitglied="getmitglied"
+                        v-on:addentry="addEntry"
+                        v-on:rementry="remEntry"
+                        v-on:remuserfromentry="remUserFromEntry"
+                >
+                </veranstalltung>
+
+
+
+            </section>
+
+            <section class="route default" v-else>
+                <h2>Home</h2>
+
+                <nachrichten
+                    v-bind:nachrichten="nachrichten"
+                >
+
+                </nachrichten>
+            </section>
+        </section>
+        <section v-if="serverConfig.headers.authorization ===  null">
+
+            <h2 v-if="route ===  '#Registrieren'"><a href="#" @click="route = '#login'">Login</a> - Registrieren</h2>
+            <h2 v-else>Login - <a href="#" @click="route = '#Registrieren'">Registrieren</a></h2>
+            <!--<img src="http://localhost:8080/image"/>-->
+
+            <section v-if="route ===  '#Registrieren'">
+                <mitglied-erstellen
+                        v-bind:mitglied="mitglied"
+                        v-on:insertentry="insertEntry"
+                        v-on:editentry="editEntry"
+                >
+                </mitglied-erstellen>
+            </section>
+            <section v-else>
+                <input type="text" v-model="loginData.username" placeholder="Login name">
+                <input type="password" v-model="loginData.password" placeholder="Passwort">
+                <button @click="login()">Login</button>
+                </section>
+        </section>
+    </main>
+</div>
+</body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="lost.js" language="javascript" type="text/javascript"></script>
+</html>
+
+
+
